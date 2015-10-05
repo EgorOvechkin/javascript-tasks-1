@@ -35,24 +35,24 @@ if (minutes >= 0 && minutes <= 59 && hours >= 0 && hours <= 23)
 }
 else
 {
-	var er;
-	if (minutes < 0)
-	{
-		er = 'минуты (не должны быть меньше нуля)';
-	}
+	var er = 'Не верно указаны ';
 	if (hours < 0)
 	{
-		er = 'часы (не должны быть меньше нуля)';
-	}
-	if (minutes > 59)
-	{
-		er = 'минуты (не должны быть больше 59)';
+		console.log(er + 'часы (не должны быть меньше нуля)');
 	}
 	if (hours > 23)
 	{
-		er = 'часы (не должны быть больше 23)';
+		console.log(er + 'часы (не должны быть больше 23)');
 	}
-	console.log('Не верно указаны ' + er);
+	if (minutes < 0)
+	{
+		console.log(er + 'минуты (не должны быть меньше нуля)');
+	}
+	if (minutes > 59)
+	{
+		console.log(er + 'минуты (не должны быть больше 59)');
+	}
+	
 }
 function arabToRoman(num)
 {
