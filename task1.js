@@ -2,17 +2,17 @@ var hours = process.argv[2];
 var minutes = process.argv[3];
 // Немного замечательного кода и магии
 if (minutes >= 0 && minutes <= 59 && hours >= 0 && hours <= 23)
+var forty = [];
+var nine = [];
+var four = [];
+var heightOfSymbol = 7;
+var zero = ['     ','     ','     ','@@@@@','     ','     ','     '];
+var one = ['@@@@@ ','  @   ','  @   ','  @   ','  @   ','  @   ','@@@@@ '];
+var five = ['@       @ ','@       @ ','@       @ ',' @     @  ','  @   @   ','   @ @    ', '    @     '];
+var ten = ['@     @ ',' @   @  ','  @ @   ','   @    ','  @ @   ',' @   @  ','@     @ '];
+var fiveteen = ['@      ','@      ','@      ','@      ','@      ','@    @ ','@@@@@@ '];
+var colon = ['   ','   ',' @ ','   ',' @ ','   ','   '];
 {
-	var forty = [];
-	var nine = [];
-	var four = [];
-	var heightOfSymbol = 7;
-	var zero = ['     ','     ','     ','@@@@@','     ','     ','     '];
-	var one = ['@@@@@ ','  @   ','  @   ','  @   ','  @   ','  @   ','@@@@@ '];
-	var five = ['@       @ ','@       @ ','@       @ ',' @     @  ','  @   @   ','   @ @    ', '    @     '];
-	var ten = ['@     @ ',' @   @  ','  @ @   ','   @    ','  @ @   ',' @   @  ','@     @ '];
-	var fiveteen = ['@      ','@      ','@      ','@      ','@      ','@    @ ','@@@@@@ '];
-	var colon = ['   ','   ',' @ ','   ',' @ ','   ','   '];
 	for (var i = 0; i < heightOfSymbol; i++)
 	{
 		forty[i] = ten[i] + fiveteen[i];
