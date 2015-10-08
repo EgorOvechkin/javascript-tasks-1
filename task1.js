@@ -14,11 +14,11 @@ var fiveteen = ['@      ','@      ','@      ','@      ','@      ','@    @ ','@@@
 var colon = ['   ','   ',' @ ','   ',' @ ','   ','   '];
 var res = [];
 for (var i = 0; i < HEIGHT_OF_SYMBOL; i++)
-	{
-		forty[i] = ten[i] + fiveteen[i];
-		nine[i] = one[i] + ten[i];
-		four[i] = one[i] + five[i];
-	}
+{
+	forty[i] = ten[i] + fiveteen[i];
+	nine[i] = one[i] + ten[i];
+	four[i] = one[i] + five[i];
+}
 if (minutes >= 0 && minutes <= 59 && hours >= 0 && hours <= 23)
 {
 	arabToRoman(hours);
